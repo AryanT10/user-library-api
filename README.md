@@ -104,13 +104,13 @@ curl http://localhost:3000/overdue?username=Aryan
 
 ## Assumptions and Decisions
 
-### In-Memory Storage: The application uses an in-memory array to store user data. This approach was chosen for simplicity and to avoid dependencies on a database. This means that the data will be reset every time the server restarts.
+In-Memory Storage: The application uses an in-memory array to store user data. This approach was chosen for simplicity and to avoid dependencies on a database. This means that the data will be reset every time the server restarts.
 
-### Validation: The API includes basic validation to ensure that a user cannot borrow a book if they already have one borrowed and cannot return a book if they haven't borrowed one.
+Validation: The API includes basic validation to ensure that a user cannot borrow a book if they already have one borrowed and cannot return a book if they haven't borrowed one.
 
-### Overdue Calculation: The overdue calculation assumes a fixed 14-day period for all borrowed items. The Luxon library is used for date manipulation and comparison.
+Overdue Calculation: The overdue calculation assumes a fixed 14-day period for all borrowed items. The Luxon library is used for date manipulation and comparison.
 
-### No Authentication: The application does not include authentication or user management features. It assumes that usernames are unique and manages users based solely on their usernames.
+No Authentication: The application does not include authentication or user management features. It assumes that usernames are unique and manages users based solely on their usernames.
 
 ## Testing the Application
 
