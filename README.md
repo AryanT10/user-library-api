@@ -59,6 +59,8 @@ Request Body:
 // Response: Returns a success message with the user details.
 }
 ```
+![POST1](https://github.com/user-attachments/assets/7b6df0e6-9cec-42bb-986f-32bd08038d0e)
+
 
 Example:
 
@@ -66,7 +68,7 @@ Example:
 curl -X POST http://localhost:3000/lend -H "Content-Type: application/json" -d '{"username": "Aryan"}'
 ```
 
-1. Return a Book
+2. Return a Book
 Endpoint: /return
 
 Method: POST
@@ -79,12 +81,13 @@ Request Body:
 }
 // Response: Returns a success message with the user details.
 ```
+![POST2](https://github.com/user-attachments/assets/fb007f1e-7246-4eb0-93c6-41969608aebb)
 
 Example:
 ```bash
 curl -X POST http://localhost:3000/return -H "Content-Type: application/json" -d '{"username": "Aryan"}'
 ```
-1. Check Overdue Items
+3. Check Overdue Items
 Endpoint: /overdue
 
 Method: GET
@@ -100,6 +103,7 @@ Example:
 curl http://localhost:3000/overdue?username=Aryan
 
 ```
+![GET](https://github.com/user-attachments/assets/b0b6f2a7-0678-4f87-9874-3de4b6d2e4ec)
 
 
 ## Assumptions and Decisions
