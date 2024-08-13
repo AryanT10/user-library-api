@@ -54,7 +54,6 @@ Method: POST
 Request Body:
 
 ```json
-Copy code
 {
   "username": "string"
 // Response: Returns a success message with the user details.
@@ -115,7 +114,7 @@ curl http://localhost:3000/overdue?username=Aryan
 
 ## Testing the Application
 
-### You can use tools like Postman or cURL to test the API endpoints. Examples of how to test each endpoint using cURL are provided above.
+You can use tools like Postman or cURL to test the API endpoints. Examples of how to test each endpoint using cURL are provided above.
 
-### If you wish to write unit tests, consider using a testing framework like Jest or Mocha.
+If you wish to write unit tests, consider using a testing framework like Jest or Mocha.
 
